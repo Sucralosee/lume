@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'Nippo-Variable';
+  src: url('/fonts/Nippo-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nippo-Variable', Arial, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
