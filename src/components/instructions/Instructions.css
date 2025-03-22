@@ -1,0 +1,18 @@
+.instructions-container{
+    display: flex;
+    width: 18.75rem;
+    padding: 1.125rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.num{
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 378;
+    line-height: normal;
+}
+
+.instruct{
+
+}

@@ -1,0 +1,52 @@
+.conPan-container{
+    width: 18.75rem;
+    height: 32.3125rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='6' stroke-dasharray='16' stroke-dashoffset='13' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5625rem 1.125rem;
+
+    width: 18.75rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-bot{
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    justify-content: start;
+    align-items: center;
+    margin: 0.5rem;
+    border-bottom: 2px dashed #000;
+}
+
+.conPan-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+}
+
+.conPan-options{
+    display: flex;
+    padding: 0.5625rem 1.125rem;
+
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.conPan-nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1.125rem;
+    gap: 0.5rem;    
+}
