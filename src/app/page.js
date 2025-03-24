@@ -9,7 +9,6 @@ export default function Home() {
 
   return (
     <>
-      <h1>Lume</h1>
       <ControlPanel title="How to begin choosing your colors"></ControlPanel>
     </>
   );

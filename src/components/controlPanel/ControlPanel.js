@@ -10,10 +10,10 @@ const ControlPanel = ({ title }) => {
   const [step, setStep] = useState(1);
   const [prevStep, setPrevStep] = useState(null); // To track where user came from
   const [colorInputs, setColorInputs] = useState({
-    mainColor: '#dadada',
-    secondary: '#dadada',
-    accent: '#dadada',
-    accent2: '#dadada'
+    mainColor: '#000000',
+    secondary: '#000000',
+    accent: '#000000',
+    accent2: '#000000'
   });
   const [generatedColors, setGeneratedColors] = useState([]);
 
@@ -74,39 +74,43 @@ const ControlPanel = ({ title }) => {
           <>
             <Instructions num='3' instruct='Create your palette'></Instructions>
             <div className='color-input-container'>
-              <div>
-                <label>Main Color:</label>
+              <div className='ind-color'>
+                <label className='ind-name-color'>Main Color:</label>
                 <input 
-                  type="text" 
-                  value={colorInputs.mainColor} 
-                  onChange={(e) => handleColorChange('mainColor', e.target.value)} 
+                    type="text" 
+                    className='input-container'
+                    value={colorInputs.mainColor} 
+                    onChange={(e) => handleColorChange('mainColor', e.target.value)} 
                 />
                 <div className="color-preview" style={{ backgroundColor: colorInputs.mainColor }}></div>
               </div>
-              <div>
-                <label>Secondary:</label>
+              <div className='ind-color'>
+                <label className='ind-name-color'>Secondary:</label>
                 <input 
-                  type="text" 
-                  value={colorInputs.secondary} 
-                  onChange={(e) => handleColorChange('secondary', e.target.value)} 
+                    type="text" 
+                    className='input-container'
+                    value={colorInputs.secondary} 
+                    onChange={(e) => handleColorChange('secondary', e.target.value)} 
                 />
                 <div className="color-preview" style={{ backgroundColor: colorInputs.secondary }}></div>
               </div>
-              <div>
-                <label>Accent:</label>
+              <div className='ind-color'>
+                <label className='ind-name-color'>Accent:</label>
                 <input 
-                  type="text" 
-                  value={colorInputs.accent} 
-                  onChange={(e) => handleColorChange('accent', e.target.value)} 
+                    type="text" 
+                    className='input-container'
+                    value={colorInputs.accent} 
+                    onChange={(e) => handleColorChange('accent', e.target.value)} 
                 />
                 <div className="color-preview" style={{ backgroundColor: colorInputs.accent }}></div>
               </div>
-              <div>
-                <label>Accent #2:</label>
+              <div className='ind-color'>
+                <label className='ind-name-color'>Accent #2:</label>
                 <input 
-                  type="text" 
-                  value={colorInputs.accent2} 
-                  onChange={(e) => handleColorChange('accent2', e.target.value)} 
+                    type="text" 
+                    className='input-container'
+                    value={colorInputs.accent2} 
+                    onChange={(e) => handleColorChange('accent2', e.target.value)} 
                 />
                 <div className="color-preview" style={{ backgroundColor: colorInputs.accent2 }}></div>
               </div>
@@ -119,7 +123,7 @@ const ControlPanel = ({ title }) => {
             <Instructions num='3' instruct='I have a Coolors palette'></Instructions>
             <div>
               <label>Cooler export URL:</label>
-              <input type="text" placeholder="Link goes here" />
+              <input type="text" placeholder="Link goes here" className='input-container input-coolors'/>
             </div>
           </>
         );
@@ -154,7 +158,7 @@ const ControlPanel = ({ title }) => {
                     style={{ backgroundColor: color }}
                   ></div>
                 ))}
-                <Button>Copy Colours</Button>
+                {/* <Button>Copy Colours</Button> */}
               </div>
             )}
           </>
@@ -165,19 +169,26 @@ const ControlPanel = ({ title }) => {
   };
 
   return (
-    <section className='conPan-container'>
-      <div className='title-container'>
-        <div className='title-bot'>
-          <h2>{title}</h2>
-        </div>
-      </div>
-      <div className='conPan-content'>
-        {renderStep()}
-      </div>
-      <div className='conPan-nav'>
-        {step > 1 && <Button onClick={goBack}>Back</Button>}
-      </div>
-    </section>
+    <>
+        <section className='conPan-header'>
+            <h1>Lume</h1>
+            <h3>Interactive Colour Activity</h3>
+        </section>
+        <section className='conPan-container'>
+            <div className='title-container'>
+                <div className='title-bot'>
+                <h2>{title}</h2>
+                </div>
+            </div>
+            <div className='conPan-content'>
+                {renderStep()}
+            </div>
+            <div className='conPan-nav'>
+                {step > 1 && <Button onClick={goBack}>GO BACK</Button>}
+            </div>
+        </section>
+    </>
+    
   );
 };
 
