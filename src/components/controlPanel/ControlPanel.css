@@ -91,3 +91,17 @@ input{
 .input-coolors{
     width: 200px;
 }
+
+.conPan-colors{
+    display: flex;
+    padding: 0.5625rem 1.125rem;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.colorBox{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+}
+
