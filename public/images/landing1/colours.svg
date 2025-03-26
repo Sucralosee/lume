@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561 447">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dad9d9;
+      }
+    </style>
+  </defs>
+  <g id="Layer_7" data-name="Layer 7">
+    <g>
+      <path class="cls-1" d="M447,114v105h-52.5c-29,0-52.5-23.5-52.5-52.5v-52.5h105Z"/>
+      <path class="cls-1" d="M228,0h52.5C309.5,0,333,23.5,333,52.5h0c0,29-23.5,52.5-52.5,52.5h0c-29,0-52.5-23.5-52.5-52.5V0h0Z" transform="translate(561 105) rotate(180)"/>
+      <path class="cls-1" d="M0,114h52.5c29,0,52.5,23.5,52.5,52.5h0c0,29-23.5,52.5-52.5,52.5h0C23.5,219,0,195.5,0,166.5v-52.5H0Z" transform="translate(105 333) rotate(180)"/>
+      <path class="cls-1" d="M228,114h52.5c29,0,52.5,23.5,52.5,52.5h0c0,29-23.5,52.5-52.5,52.5h0c-29,0-52.5-23.5-52.5-52.5v-52.5h0Z" transform="translate(114 447) rotate(-90)"/>
+      <path class="cls-1" d="M0,0h52.5C81.5,0,105,23.5,105,52.5h0c0,29-23.5,52.5-52.5,52.5H0V0H0Z" transform="translate(105 105) rotate(180)"/>
+      <path class="cls-1" d="M456,114h52.5c29,0,52.5,23.5,52.5,52.5h0c0,29-23.5,52.5-52.5,52.5h-52.5v-105h0Z"/>
+      <path class="cls-1" d="M114,114h52.5c29,0,52.5,23.5,52.5,52.5h0c0,29-23.5,52.5-52.5,52.5h-52.5v-105h0Z" transform="translate(333 0) rotate(90)"/>
+      <path class="cls-1" d="M228,228h0c58,0,105,47,105,105h-105v-105h0Z"/>
+      <path class="cls-1" d="M456,228h0c58,0,105,47,105,105h-105v-105h0Z" transform="translate(228 789) rotate(-90)"/>
+      <path class="cls-1" d="M456,342h0c58,0,105,47,105,105h-105v-105h0Z"/>
+      <path class="cls-1" d="M342,0h105v105h-52.5c-29,0-52.5-23.5-52.5-52.5V0h0Z" transform="translate(447 -342) rotate(90)"/>
+    </g>
+  </g>
+</svg>

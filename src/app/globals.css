@@ -5,7 +5,7 @@
   --foreground: #171717;
 
   --mainColor: #f5f5f5;
-  --secondaryColor: #e0e0e0;
+  --secondaryColor: #242020;
   --accent1: #ff8a80;
   --accent2: #ff5252;
   
@@ -55,7 +55,11 @@ p{
 }
 
 .main-container{
-  width: 62.5rem;
+  background-color: var(--mainColor);
+  position: relative;  /* Create positioning context for absolute children */
+  overflow: hidden;  /* Prevent scrollbars if content exceeds */
+
+  width: 63rem;
   height: 37.6rem;
   flex-shrink: 0;
 
@@ -64,16 +68,21 @@ p{
 
 .mainColor{
   background-color: var(--mainColor);
+  fill: var(--mainColor);
+
 }
 .secondaryColor{
   background-color: var(--secondaryColor);
+  fill: var(--secondaryColor);
 
 }
 .accent1{
   background-color: var(--accent1);
+  fill: var(--accent1);
 
 }
 .accent2{
   background-color: var(--accent2);
+  fill: var(--accent2);
 
 }

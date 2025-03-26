@@ -10,7 +10,7 @@ const ControlPanel = () => {
   const [prevStep, setPrevStep] = useState(null);
   const [colorInputs, setColorInputs] = useState({
     mainColor: '#f5f5f5',
-    secondary: '#e0e0e0',
+    secondary: '#242020',
     accent: '#ff8a80',
     accent2: '#ff5252'
   });
