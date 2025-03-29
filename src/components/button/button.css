@@ -7,7 +7,7 @@
     gap: 0.5rem;
     position: relative;
     font-size: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     background: transparent;
     cursor: pointer;
     overflow: hidden;

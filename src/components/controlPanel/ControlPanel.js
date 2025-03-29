@@ -4,6 +4,7 @@ import React from 'react';
 import './ControlPanel.css';
 import Instructions from '../instructions/Instructions';
 import Button from '../button/button';
+import ColourInfo from '../colourInfo/ColourInfo';
 
 const ControlPanel = () => {
   const [step, setStep] = useState(1);
@@ -175,11 +176,12 @@ const ControlPanel = () => {
         <div className='conPan-content'>
           {renderStep()}
         </div>
-        <div className='conPan-colors'>
+        {/* <div className='conPan-colors'>
           {Object.keys(colorInputs).map((key) => (
             <div className={`colorBox ${key}`} key={key} style={{ backgroundColor: colorInputs[key] }}></div>
           ))}
-        </div>
+        </div> */}
+        <ColourInfo colorInputs={colorInputs} />
         <div className='conPan-nav'>
           {step > 1 && <Button onClick={goBack}>GO BACK</Button>}
         </div>

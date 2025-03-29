@@ -1,0 +1,51 @@
+/* ColorTooltip.css */
+.tooltip-container {
+    position: relative;
+  }
+  
+  .color-tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 120px;
+    text-align: center;
+    z-index: 100;
+    pointer-events: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .color-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  }
+  
+  .color-name {
+    margin: 0 0 4px 0;
+    font-weight: bold;
+  }
+  
+  .color-hex {
+    margin: 0;
+    opacity: 0.9;
+  }
+  
+  .tooltip-enabled .colorBox {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .tooltip-enabled .colorBox:hover {
+    transform: scale(1.05);
+  }
