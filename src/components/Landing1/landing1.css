@@ -74,8 +74,6 @@
 
     font-size: 1.25rem;
     font-weight: 500;
-
-    
 }
 
 .lp-1-copy{
@@ -100,4 +98,53 @@
     width: 35.0625rem;
     height: 27.9375rem;
     flex-shrink: 0;
+}
+
+@media (width <= 1300px) {
+    .lp-1-nav{
+        display: none;
+    }
+
+    .lp-1-content{
+        width: 16.875rem;
+        height: 15rem;
+        flex-shrink: 0;
+        top: 23rem;
+        left: 1rem;
+    }
+
+    .lp-1-title {
+        font-size: 1.75rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .lp-1-button{
+        height: 3rem;
+        width: 16.875rem;
+        border-radius: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.98rem;
+    }
+
+    .lp-1-copy{
+        font-size: 1rem;
+    }
+
+    .lp-1-bg{
+        width: 20.25rem;
+        height: 15.875rem;
+        transform: rotate(-90deg) scaleX(-1);
+        flex-shrink: 0;
+    }
+
+    .lp-1-bg-container{
+        position: absolute;
+        left: 6.9rem;
+        z-index: 0; 
+        display: flex;
+        width: 16.875rem;
+        justify-content: flex-end;
+        padding: 3.7rem;
+    }
 }
