@@ -5,6 +5,19 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Landing1 = () => {
+
+
+     const [index, setIndex] = useState(0);
+  const phrases = ["Color Theory", "Typography", "Layout Design"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % phrases.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
+
     const bgPathsRef = useRef([]);
     const contentRef = useRef(null);
     const logoRef = useRef(null);
@@ -93,10 +106,25 @@ const Landing1 = () => {
                 </div>
             </nav>
 
-            <div className="lp-1-content" ref={contentRef}>
+            {/* <div className="lp-1-content" ref={contentRef}>
                 <p className="lp-1-title lp-1-text">The Power of Color Theory</p>
                 <p className="lp-1-button accent2 lp-1-text">Learn how it Impacts Web Design</p>
                 <p className="lp-1-copy lp-1-text">Color is more than just aesthetics — it shapes emotions, guides user behaviour, and strengthens brand identity. The right colour palette can make your website more engaging, accessible, and memorable.</p>
+            </div> */}
+
+            <div className="lp-1-content" ref={contentRef}>
+                <p className="lp-1-title lp-1-text">
+                The Power of{" "}
+                <span className="rotating-word accent2">{phrases[index]}</span>
+                </p>
+                <p className="lp-1-button accent2 lp-1-text">
+                Learn how it Impacts Web Design
+                </p>
+                <p className="lp-1-copy lp-1-text">
+                Color is more than just aesthetics — it shapes emotions, guides user
+                behaviour, and strengthens brand identity. The right colour palette
+                can make your website more engaging, accessible, and memorable.
+                </p>
             </div>
 
             <div className="lp-1-bg-container">
