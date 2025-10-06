@@ -1,10 +1,11 @@
 "use client";
+
 import { useState, useEffect } from 'react';
 import React from 'react';
 import './ControlPanel.css';
-import Instructions from '../instructions/Instructions';
-import Button from '../button/button';
-import ColourInfo from '../colourInfo/ColourInfo';
+import Instructions from '../instructionsComp/Instructions';
+import Button from '../buttonComp/button';
+import ColourInfo from '../colourInfoComp/ColourInfo';
 
 const ControlPanel = () => {
   const [step, setStep] = useState(1);
