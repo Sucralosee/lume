@@ -1,7 +1,7 @@
 "use client"
 
 import "./landing1.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const Landing1 = () => {
