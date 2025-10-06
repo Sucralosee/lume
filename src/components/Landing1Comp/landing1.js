@@ -7,15 +7,15 @@ import gsap from "gsap";
 const Landing1 = () => {
 
 
-     const [index, setIndex] = useState(0);
-  const phrases = ["Color Theory", "Typography", "Layout Design"];
+    const [index, setIndex] = useState(0);
+    const phrases = ["Color Theory", "Typography", "Design"];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % phrases.length);
-    }, 2500);
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % phrases.length);
+        }, 2500);
     return () => clearInterval(interval);
-  }, []);
+    }, []);
 
 
     const bgPathsRef = useRef([]);
@@ -115,7 +115,7 @@ const Landing1 = () => {
             <div className="lp-1-content" ref={contentRef}>
                 <p className="lp-1-title lp-1-text">
                 The Power of{" "}
-                <span className="rotating-word accent2">{phrases[index]}</span>
+                <span className="rotating-word">{phrases[index]}</span>
                 </p>
                 <p className="lp-1-button accent2 lp-1-text">
                 Learn how it Impacts Web Design
